@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RameshSuite]">
+  <test thread-count="5" name="LoginTestRun(failed)">
+    <classes>
+      <class name="packg.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- packg.LoginTest -->
+    </classes>
+  </test> <!-- LoginTestRun(failed) -->
+</suite> <!-- Failed suite [RameshSuite] -->

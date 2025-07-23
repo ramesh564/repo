@@ -1,0 +1,11 @@
+
+<suite name="RameshSuite">
+  <test name="LoginTestRun">
+    <classes>
+      <class name="packg.LoginTest"/>
+       <class name="packg.Excelutils"/>
+        <class name="packg.EmailTrigger"/>
+       <class name="packg.SendEmailAfterTests"/>
+    </classes>
+  </test>
+</suite>
