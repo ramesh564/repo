@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="packg.LoginTest">
+      <class name="packg.Login">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
           <include name="loginTest"/>
         </methods>
-      </class> <!-- packg.LoginTest -->
+      </class> <!-- packg.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

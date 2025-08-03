@@ -1,0 +1,5 @@
+@echo off
+echo Starting Selenium Maven Test Execution...
+start chrome "C:\Users\hp\eclipse-workspace\selenium-framework"
+mvn clean test
+pause

@@ -33,7 +33,7 @@ public class Locators {
     driver.get("https://rahulshettyacademy.com/locatorspractice/");
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void LoginTest()
 	{
 	driver.findElement(By.id("inputUsername")).sendKeys("rahul");
@@ -45,7 +45,7 @@ public class Locators {
 	
     // Validation 
 	
-	@Test
+	@Test(priority=2)
 	public void Loginvalidation()
 	{
 		
@@ -55,28 +55,12 @@ public class Locators {
 	driver.findElement(By.className("signInBtn")).click();
 	
 	
-	//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	//WebElement error = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("p.error")));
-	//System.out.println(error.getText());
-	
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	
     System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
 	
 	String errorMsg = driver.findElement(By.cssSelector("p.error")).getText();
 	
-	//System.out.println("Actual Message: " + errorMsg);
-	
-	//Assert.assertTrue(errorMsg.contains("Incorrect username or password"));
-	
-	
-	//driver.findElement(By.linkText("Forgot your password?")).getText();
-	
-	
-	
-
-
-
 	}
 	
 	

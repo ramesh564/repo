@@ -1,0 +1,6 @@
+@echo off
+echo Starting Selenium Maven Test Execution...
+set /p C:\Users\hp\eclipse-workspace\selenium-framework
+ans /a ans=%q%
+Echo Answer : %ans%
+pause
